@@ -1,0 +1,115 @@
+body{
+    font-family: "poppins", sans-serif;
+}
+.wrapper{
+ display: flex;
+ flex-flow: row wrap;
+ text-align: center;
+}
+.wrapper > * {
+    padding:10px;
+    margin:10px;
+    border-radius: 10px;
+    flex:1 100%;
+}
+.header{
+    position: relative;
+    display: inline-block;
+}
+H1{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    
+}
+.footer{
+    background: #FFEBCD;
+    height: 170px;
+}
+.main{
+    background: #D2B48C;
+    height: auto;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.aside1{
+    background: #FFEBCD;
+    height: 100%;
+    
+}
+.container{
+   margin-top:5%;
+   font-family: "Varta", sans-serif;
+}
+
+.teks{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin-left: 27%;
+  margin-top: 22%;
+  font-size: 40px;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+nav h1 h4{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 60%;
+    justify-content: center;
+}
+.content-header{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    top: 107%;
+    left:70%;
+    margin-left:-6%;
+    font-family: "Merriweather Sans", sans-serif;
+    
+}
+
+
+
+/* Tampilan Responsive */
+@media all and (min-width: 800px){
+    .main{
+        flex: 2;
+    }
+
+    .aside1{
+        order: 2;
+    }
+    .aside{
+        order: 2;
+    }
+    .main{
+        order:1;
+    }
+    .footer{
+        order: 4;
+    }
+    .content-header{
+    order: 4;
+    }
+    .teks{
+        font-size: 90px !important;
+        margin-left: 28% !important;
+        margin-top: 9%;
+    }
+    .about{
+        margin-top: 20%;
+        margin-left: 25%;
+        }
+}
+
+@media all and (min-width: 600px){
+    .aside1{
+        flex: 1;
+    }
+    
+}
